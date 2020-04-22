@@ -56,7 +56,7 @@
         ele.addEventListener('canplay', function () {
             setTimeout(function () {
                 ele.play();
-            }, 600);
+            }, 150);
         })
         document.getElementById("container").onclick = function () {
             ele.pause();
@@ -65,7 +65,7 @@
             var jntm = document.getElementById("jntm");
             jntm.style.display = "block";
             mp32.play();
-            hr.innerHTML = '<iframe id="jntm_music" frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="static/mp3/astronomia.mp3"></iframe>';
+//             hr.innerHTML = '<iframe id="jntm_music" frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="static/mp3/astronomia.mp3"></iframe>';
             if (document.body.clientWidth > document.body.clientHeight) {
                 jntm.innerHTML = '<img  src="static/gif/0.gif" width="100%" style="margin: 0" >';
             } else {

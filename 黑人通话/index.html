@@ -53,11 +53,11 @@
     <script>
         var ele = document.getElementById("wx_music");
         var mp32 = document.getElementById("mp32");
-//         ele.addEventListener('canplay', function () {
-//             setTimeout(function () {
-//                 ele.play();
-//             }, 500);
-//         })
+        ele.addEventListener('canplay', function () {
+            setTimeout(function () {
+                ele.play();
+            }, 500);
+        })
         document.getElementById("container").onclick = function () {
             ele.pause();
             this.removeChild(ele);
